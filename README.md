@@ -22,7 +22,7 @@ Switch to the repo folder
 
 ## Chain Class
 
-        <?php
+```php
         class Chain
         {
             /**
@@ -81,6 +81,7 @@ Switch to the repo folder
             }
 
         }
+```
 
 ## Running Test
 
@@ -88,7 +89,7 @@ Switch to the repo folder
 
 ## Test Cases
 
-    <?php
+```php
 
     use PHPUnit\Framework\TestCase;
 
@@ -138,3 +139,5 @@ Switch to the repo folder
         }
 
     }
+
+```
