@@ -15,18 +15,18 @@ Install composer dependencies
 ## How to use the chain class to find the starting number, under one million which produces the longest chain?
 
 ```php
-include 'src/Chain.php';
-$hop = new Chain(1000000);
-var_dump($hop->Process());
+        include 'src/Chain.php';
+        $hop = new Chain(1000000);
+        var_dump($hop->Process());
 
 ```
 
 ## Output
 
 ```php
-array (size=2)
-'number' => int 1161
-'Hops:' => int 181
+        array (size=2)
+        'number' => int 1161
+        'Hops:' => int 181
 ```
 
 ## Chain Class
