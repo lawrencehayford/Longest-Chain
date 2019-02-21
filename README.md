@@ -8,6 +8,10 @@ Switch to the repo folder
 
     cd Longest-Chain
 
+Install composer dependencies
+
+    composer install
+
 ## How to use the chain class to find the starting number, under one million which produces the longest chain?
 
 ```php
