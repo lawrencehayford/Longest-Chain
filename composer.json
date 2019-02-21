@@ -1,10 +1,16 @@
 {
-    "name": "lawrencecasely-hayford/longest-chain",
-    "authors": [
-        {
-            "name": "Lawrence Casely-Hayford",
-            "email": "lawrencecaselyhayford@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "lawrencecasely-hayford/longest-chain",
+  "authors": [
+    {
+      "name": "Lawrence Casely-Hayford",
+      "email": "lawrencecaselyhayford@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "require-dev": {
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "~6.0"
+  }
 }

@@ -1,0 +1,5 @@
+
+#Mac created files
+.DS_Store
+#Composer checked out files
+/vendor/

@@ -4,12 +4,22 @@ class Chain
     /**
      * @var MaximumSteps
      */
-    protected $maxStep = 2000;
+    protected $maxStep = 0;
 
     /**
      * @var ArrayOfAllSteps
      */
     protected $all_steps = [];
+
+    /**
+     * Constructor sets the maximum step
+     * @param $maxStep
+     * @return void
+     */
+    public function __construct($maxStep)
+    {
+        $this->maxStep = $maxStep;
+    }
 
     /**
      * This function returns the number of steps
