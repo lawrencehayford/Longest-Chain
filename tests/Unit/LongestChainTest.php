@@ -17,9 +17,15 @@ class LongestChainTest extends TestCase
      */
     protected $hops;
 
+    /**
+     * @var mockChain
+     */
+    protected $mockChain;
+
     public function setUp()
     {
         parent::setUp();
+        $this->mockChain = \Mockery::mock(Chain::class);
         $this->hops = new Chain($this->maxStep);
     }
 
@@ -35,6 +41,17 @@ class LongestChainTest extends TestCase
      */
     public function testProcess()
     {
+        $this->mockChain
+            ->shouldReceive('HopSequence')
+            ->with($start = 1, $step = 1)
+            ->once()
+            ->andReturn(1);
+
+        $this->mockChain
+            ->shouldReceive('Process')
+            ->once()
+            ->andReturn(['number' => 1, 'Hops:' => 1]);
+
         $returnedArray = $this->hops->Process();
         $this->assertInternalType('array', $returnedArray);
         return $returnedArray;
